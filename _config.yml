@@ -1,12 +1,12 @@
 # Site settings
-title: "AI Research | technical blogs"
+title: "Nguyen Tri Dung"
 description: >
-  Teaching computers how to think like human beings.
+  CTO | Technical Founder | Applied AI, Generative AI, AI Agent Systems
 
-author: dungntnew
+author: Nguyen Tri Dung
 email: dungntnew@gmail.com
 twitter_username: dungntnew
-github_username: dungntnew
+github_username: pysync
 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dungntnew.github.io" # the base hostname & protocol for your site
@@ -24,4 +24,3 @@ sass:
     style: compressed
 
 exclude: [vendor]
-
