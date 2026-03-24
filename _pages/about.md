@@ -17,6 +17,7 @@ His background spans product engineering in Japan, large-scale platform work, an
 
 ## Online
 
+- [Email](mailto:{{ site.email }})
 - [GitHub](https://github.com/pysync)
 - [Writing archive]({{ "/writing/" | relative_url }})
 - [Projects]({{ "/projects/" | relative_url }})

@@ -8,8 +8,8 @@ email: dungntnew@gmail.com
 twitter_username: dungntnew
 github_username: pysync
 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dungntnew.github.io" # the base hostname & protocol for your site
+baseurl: "/dungntnew.github.io"
+url: "https://pysync.github.io"
 timezone: "Asia/Tokyo"
 encoding: "utf-8"
 google_analytics_id: UA-1111111111-1
