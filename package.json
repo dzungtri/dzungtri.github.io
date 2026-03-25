@@ -1,24 +1,22 @@
 {
-  "name": "profile",
+  "name": "dzungtri-github-io",
   "version": "1.0.0",
+  "private": true,
   "description": "Personal profile and blog for dzungtri.github.io",
-  "main": "scripts/build.mjs",
   "scripts": {
-    "build": "node scripts/build.mjs",
+    "build": "rm -rf public && bundle exec jekyll build -d public",
     "new:post": "node scripts/new-post.mjs",
-    "preview": "npm run build && python3 -m http.server 4173 -d public",
+    "preview": "bundle exec jekyll serve --host 127.0.0.1 --port 4173 --destination public",
     "deploy:quick": "bash scripts/deploy.sh",
     "sync:owner": "bash scripts/update-github-owner.sh dzungtri",
     "test": "npm run build"
   },
   "keywords": [
+    "jekyll",
     "github-pages",
     "blog",
     "personal-site"
   ],
   "author": "Nguyen Tri Dung",
-  "license": "ISC",
-  "dependencies": {
-    "docx": "^9.6.1"
-  }
+  "license": "ISC"
 }

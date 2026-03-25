@@ -1,22 +1,30 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-MESSAGE="${1:-site: update profile and blog content}"
+MESSAGE="${1:-content: update profile and blog content}"
 
 npm run build
+
 git add -u
 git add \
   .github/workflows/deploy-pages.yml \
   .gitignore \
+  404.md \
   AGENTS.md \
-  DEPLOY-GITHUB-PAGES.md \
+  Gemfile \
   README.md \
-  content \
+  _config.yml \
+  _data \
+  _includes \
+  _layouts \
+  _pages \
+  _posts \
+  assets \
+  blog \
   docs \
+  index.html \
   package.json \
-  package-lock.json \
   scripts \
-  site \
   skills \
   context/README.md
 

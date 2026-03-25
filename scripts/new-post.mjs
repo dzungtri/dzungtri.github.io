@@ -4,19 +4,20 @@ import path from "path";
 const title = process.argv.slice(2).join(" ").trim();
 
 if (!title) {
-  console.error("Usage: npm run new:post -- \"Your Post Title\"");
+  console.error('Usage: npm run new:post -- "Your Post Title"');
   process.exit(1);
 }
 
 const today = new Date().toISOString().slice(0, 10);
 const slug = slugify(title);
 const filename = `${today}-${slug}.md`;
-const outputPath = path.join(process.cwd(), "content", "posts", filename);
+const outputPath = path.join(process.cwd(), "_posts", filename);
 
 const template = `---
+layout: post
 title: ${title}
 date: ${today}
-summary: One paragraph summary for list and search.
+description: One paragraph summary for list and search.
 tags: writing, update
 ---
 

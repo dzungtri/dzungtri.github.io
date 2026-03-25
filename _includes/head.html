@@ -1,0 +1,18 @@
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% if page.title and page.title != 'Home' %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+  {% assign meta_description = page.description | default: page.excerpt | default: site.description %}
+  <meta name="description" content="{{ meta_description | strip_html | strip_newlines | truncate: 160 }}" />
+  <meta name="theme-color" content="#0a1220" />
+  <link rel="canonical" href="{{ page.url | absolute_url }}" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="{{ '/assets/site/site.css' | relative_url }}" />
+  {% if page.use_math %}
+    {% include mathjax_support.html %}
+  {% endif %}
+  {% feed_meta %}
+</head>

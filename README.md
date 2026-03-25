@@ -2,10 +2,16 @@
 
 Personal profile and blog repository for `https://dzungtri.github.io/`.
 
+## Stack
+
+- Jekyll for site generation
+- GitHub Pages deployment from `main`
+- `_posts/` as the canonical writing archive
+
 ## Quick start
 
 ```bash
-npm ci
+bundle install
 npm run build
 npm run preview
 ```
@@ -16,7 +22,7 @@ npm run preview
 npm run new:post -- "Your post title"
 ```
 
-Edit file in `content/posts/`, then:
+Edit the generated file in `_posts/`, then:
 
 ```bash
 npm run deploy:quick -- "content: publish new post"
@@ -32,5 +38,4 @@ npm run deploy:quick -- "content: publish new post"
 
 - Architecture and rules: `AGENTS.md`
 - Sitemap and content model: `docs/SITEMAP.md`
-- Deployment notes: `DEPLOY-GITHUB-PAGES.md`
 - Agent deploy helper: `skills/deploy/SKILL.md`

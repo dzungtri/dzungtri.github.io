@@ -1,0 +1,39 @@
+title: Nguyen Tri Dung
+description: >-
+  CTO, technical founder, and applied AI builder working across engineering leadership,
+  product architecture, computer vision, Generative AI, and AI-native software systems.
+author: Nguyen Tri Dung
+email: dungntnew@gmail.com
+github_username: dzungtri
+url: "https://dzungtri.github.io"
+baseurl: ""
+timezone: "Asia/Ho_Chi_Minh"
+encoding: utf-8
+lang: en
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /posts/:title/
+plugins:
+  - jekyll-feed
+include:
+  - _pages
+exclude:
+  - .github
+  - node_modules
+  - vendor
+  - vendor/bundle
+  - .merge-work
+  - context
+  - docs
+  - draft
+  - AGENTS.md
+  - DEPLOY-GITHUB-PAGES.md
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - skills
+  - website
+  - scripts
+  - package-lock.json
+  - package.json

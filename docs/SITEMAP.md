@@ -2,47 +2,46 @@
 
 ## Public routes
 
-- `/` : positioning, profile, brand pillars, recent work, latest posts
-- `/blog/` : all posts + client-side search
+- `/` : executive profile homepage
+- `/writing/` : writing archive + search
+- `/blog/` : redirect to `/writing/`
 - `/posts/<slug>/` : single post page
+- `/about/` : background and scope
+- `/projects/` : representative work
 - `/404.html` : not found fallback
-- `/sitemap.xml` : generated sitemap for indexing
+- `/search-index.json` : generated client-side search index
+- `/feed.xml` : RSS feed
 
 ## Authoring sources
 
-- `content/site.json` : global profile data, links, repositories
-- `content/profile.md` : profile section markdown
-- `content/posts/*.md` : blog posts with front matter
+- `_config.yml` : global site config
+- `_data/profile.json` : homepage/profile structured data
+- `_includes/profile.md` : profile narrative markdown
+- `_posts/*.md` : published posts
+- `assets/site/site.css` : site styles
+- `assets/site/app.js` : site interactions and search
 
-## Private sources (never publish)
+## Private sources
 
 - `context/private/resume/`
 - `context/private/profile-drafts/`
 - `context/private/notes/`
 
-Front matter format:
+## Front matter format
 
 ```md
 ---
+layout: post
 title: Your title
 date: YYYY-MM-DD
-summary: One paragraph summary
+description: One paragraph summary
 tags: tag1, tag2
 ---
 ```
 
-## Daily workflow
+## Publishing strategy
 
-1. Create a draft: `npm run new:post -- "Post title"`
-2. Edit generated markdown in `content/posts/`
-3. Rebuild and preview: `npm run preview`
-4. Commit and push: `npm run deploy:quick -- "blog: your message"`
-
-GitHub Actions deploys automatically on push to `main`.
-
-## Publishing strategy for personal brand
-
-- Research notes: short insights from experiments, model behavior, and architecture tradeoffs
-- CTO execution logs: team/process lessons, delivery patterns, and decision frameworks
-- Case write-ups: what worked, what failed, and practical outcomes from real projects
-- Monthly synthesis: strategic viewpoint on applied AI and engineering leadership
+- Practical AI engineering notes
+- CTO execution logs and delivery patterns
+- Legacy modernization and reverse-engineering case notes
+- Long-term archive of technical experiments and essays

@@ -1,4 +1,10 @@
 node_modules/
+.bundle/
+vendor/
+vendor/bundle/
+.jekyll-cache/
+.sass-cache/
+.merge-work/
 .DS_Store
 npm-debug.log*
 public/

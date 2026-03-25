@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="post-shell" data-reveal>
+  <p class="post-meta">{{ page.date | date: "%b %d, %Y" }}{% if page.tags and page.tags.size > 0 %} · {{ page.tags | join: ", " }}{% endif %}</p>
+  <h1>{{ page.title }}</h1>
+  {% if page.description %}
+    <p class="lead">{{ page.description }}</p>
+  {% endif %}
+  <div class="prose post-prose">
+    {{ content }}
+  </div>
+</article>

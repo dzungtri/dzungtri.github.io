@@ -10,14 +10,16 @@ This repository is the canonical source for `https://dzungtri.github.io/`.
 
 ## Structure
 
-- `content/site.json`: global profile data and links
-- `content/profile.md`: profile section content
-- `content/posts/*.md`: blog posts (front matter + markdown)
-- `scripts/build.mjs`: static site generator
+- `_config.yml`: Jekyll site config
+- `_data/profile.json`: global profile data and homepage sections
+- `_includes/profile.md`: profile narrative content
+- `_posts/*.md`: blog posts and archive content
+- `_layouts/`: Jekyll layouts
+- `_pages/`: static pages like `about` and `projects`
+- `assets/site/`: CSS and JS for the public site
+- `public/`: generated output (do not edit by hand)
 - `scripts/new-post.mjs`: generate new post template
 - `scripts/deploy.sh`: build, commit, push helper
-- `site/`: static assets copied to `public/`
-- `public/`: generated output (do not edit by hand)
 - `skills/deploy/SKILL.md`: deploy quick guide for coding agents
 - `context/`: private source materials (local only; never publish)
 

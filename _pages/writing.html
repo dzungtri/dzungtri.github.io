@@ -1,0 +1,27 @@
+---
+layout: page
+title: Writing
+permalink: /writing/
+description: Writing archive on AI engineering, CTO execution, and technical work.
+---
+<section class="page-hero" data-reveal>
+  <p class="eyebrow">Writing</p>
+  <h1>Writing</h1>
+  <p class="lead">Archive of notes on AI engineering, product delivery, software modernization, NLP, tooling, and technical experiments across time.</p>
+</section>
+<section class="page-section">
+  <label class="search-wrap" for="search-input">
+    <span>Search posts</span>
+    <input id="search-input" type="search" placeholder="Type keyword or tag..." />
+  </label>
+  <div id="search-results" class="search-results"></div>
+  <div id="post-list" class="post-list">
+    {% for post in site.posts %}
+      <article class="post-item" data-reveal>
+        <p class="post-meta">{{ post.date | date: "%b %d, %Y" }}{% if post.tags %} · {{ post.tags | join: ", " }}{% endif %}</p>
+        <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+        <p>{{ post.description | default: post.excerpt | strip_html }}</p>
+      </article>
+    {% endfor %}
+  </div>
+</section>
