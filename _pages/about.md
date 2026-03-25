@@ -10,7 +10,7 @@ description: Background and areas of work of Dzung Tri.
   <p class="lead">CTO and technical founder working across software engineering, applied AI, realtime systems, and AI-native software execution.</p>
 </section>
 
-<section class="page-section prose" data-reveal>
+<section class="page-section prose" data-reveal markdown="1">
 Dzung Tri works at the intersection of engineering leadership, system architecture, and practical product execution. His background spans product engineering in Japan, founder-level technology leadership in Vietnam, and more recent work in open-source LLM systems, coding agents, and modernization workflows.
 
 The profile is not built from management layers alone. It comes from hands-on engineering, realtime systems, search optimization, platform work, and applied AI delivery under real constraints.
