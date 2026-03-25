@@ -1,14 +1,23 @@
 {
   "name": "profile",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Personal profile and blog for dzungtri.github.io",
+  "main": "scripts/build.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node scripts/build.mjs",
+    "new:post": "node scripts/new-post.mjs",
+    "preview": "npm run build && python3 -m http.server 4173 -d public",
+    "deploy:quick": "bash scripts/deploy.sh",
+    "sync:owner": "bash scripts/update-github-owner.sh dzungtri",
+    "test": "npm run build"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "github-pages",
+    "blog",
+    "personal-site"
+  ],
+  "author": "Nguyen Tri Dung",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "docx": "^9.6.1"
   }

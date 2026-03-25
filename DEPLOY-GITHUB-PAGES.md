@@ -1,49 +1,36 @@
 # GitHub Pages Deployment
 
-This project is prepared for GitHub Pages deployment using GitHub Actions.
+This repository deploys `https://dzungtri.github.io/` from one source of truth.
 
-## What is already set up
+## Build and deploy model
 
-- The website is self-contained inside `./website`
-- The resume `.docx` file is included inside `./website`
-- A GitHub Actions workflow is ready at `./.github/workflows/deploy-pages.yml`
-- `.nojekyll` is included for static hosting safety
-- `404.html` is included by mirroring `index.html`
+- Source content: `content/`
+- Static assets: `site/`
+- Build script: `scripts/build.mjs`
+- Generated output: `public/`
+- Private materials: `context/` (ignored from Git)
+- Deploy workflow: `.github/workflows/deploy-pages.yml`
 
-## Deploy steps
-
-1. Initialize git locally if this folder is not yet a repository:
-
-```bash
-cd /Users/dzung/profile
-git init
-git branch -M main
-git add .
-git commit -m "Prepare personal site for GitHub Pages"
-```
-
-2. Create a new GitHub repository.
-
-3. Add the remote and push:
+## Local commands
 
 ```bash
-git remote add origin <your-github-repo-url>
-git push -u origin main
+npm run build
+npm run preview
+npm run deploy:quick -- "content: update"
 ```
 
-4. On GitHub:
+## Repository settings
 
-- Open `Settings`
-- Open `Pages`
-- If GitHub asks for a build source, choose `GitHub Actions`
+1. Repository name must be `dzungtri.github.io`.
+2. In GitHub Pages settings, select `GitHub Actions`.
+3. Push to `main` to trigger deploy.
 
-5. Pushes to `main` will deploy the site automatically.
+## Daily writing flow
 
-## Site root
-
-The GitHub Pages workflow publishes `./website` as the site root.
-
-## Notes
-
-- The resume download link now points to `./nguyen-tri-dung-cto-resume.docx` inside the published site.
-- Before publishing publicly, replace placeholder contact info in the website and resume.
+```bash
+npm run new:post -- "Post title"
+npm run build
+git add content site scripts docs AGENTS.md README.md
+git commit -m "content: add new post"
+git push origin main
+```
