@@ -367,6 +367,11 @@ h3 {
   max-width: 72ch;
 }
 
+.prose,
+.post-prose {
+  overflow-wrap: break-word;
+}
+
 .principles-grid,
 .focus-grid {
   display: grid;
@@ -614,6 +619,8 @@ h3 {
 .prose table,
 .post-prose table {
   width: 100%;
+  display: block;
+  overflow-x: auto;
   border-collapse: collapse;
   margin: 1.25rem 0;
   font-size: 0.94rem;
@@ -657,6 +664,18 @@ h3 {
   padding: 1rem;
   background: var(--brand-deep);
   color: #deebff;
+}
+
+mjx-container {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+mjx-container[display="true"] {
+  display: block;
+  margin: 1.25rem 0;
+  padding-bottom: 0.15rem;
 }
 
 .prose pre code,
@@ -784,12 +803,17 @@ h3 {
 }
 
 [data-reveal] {
+  opacity: 1;
+  transform: none;
+}
+
+.has-motion [data-reveal] {
   opacity: 0;
   transform: translateY(16px);
   transition: opacity 420ms ease, transform 420ms ease;
 }
 
-[data-reveal].is-visible {
+.has-motion [data-reveal].is-visible {
   opacity: 1;
   transform: translateY(0);
 }
