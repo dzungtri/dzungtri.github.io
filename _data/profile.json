@@ -1,11 +1,12 @@
 {
   "name": "Nguyen Tri Dung",
   "role": "CTO · Technical Founder · Applied AI Builder",
-  "title": "Engineering leadership, applied AI, and AI-native software execution",
-  "description": "I work across product architecture, engineering systems, and applied AI delivery. My background spans platform engineering in Japan, founding and scaling Fabbi, shipping computer vision products, and recent work on coding agents and software modernization.",
+  "title": "Engineering leadership for applied AI, product architecture, and AI-native software execution",
+  "description": "I work where architecture, delivery, and product value meet. My path runs from product engineering in Japan, through co-founding and scaling Fabbi, to applied AI systems and recent work on LLM workflows, coding agents, and legacy modernization.",
   "baseUrl": "https://dzungtri.github.io",
   "footerNote": "Personal profile and writing on practical technology execution.",
-  "contactCta": "Open to CTO, engineering leadership, and applied AI conversations.",
+  "contactCta": "Open to CTO, engineering leadership, applied AI, and AI-native software conversations.",
+  "heroNote": "Delivery-first technology leadership shaped by product engineering in Japan, cross-border execution in Vietnam and Japan, and applied AI work built for production rather than demos.",
   "social": [
     {
       "label": "GitHub",
@@ -22,52 +23,75 @@
   ],
   "heroStats": [
     {
-      "label": "Base",
-      "value": "Vietnam · Japan"
-    },
-    {
       "label": "Experience",
-      "value": "12+ years in engineering"
+      "value": "12+ years in engineering and product delivery"
     },
     {
-      "label": "Scale built",
-      "value": "Fabbi to 250+ engineers by 2021"
+      "label": "Cross-border",
+      "value": "Built across Vietnam and Japan"
     },
     {
-      "label": "Current focus",
-      "value": "LLM systems, coding agents, software modernization"
+      "label": "Scale",
+      "value": "Fabbi to 250+ engineers and ~$4M annual revenue by 2021"
+    },
+    {
+      "label": "Current",
+      "value": "LLM systems, coding agents, reverse engineering workflows"
     }
   ],
   "currentSignals": [
-    "Operating from a CTO profile with strong delivery ownership and architecture depth.",
-    "Focused on practical Generative AI inside real software engineering workflows.",
-    "Building systems that move from architecture decision to shipped capability."
+    "Architecture decisions anchored in delivery reality, not technology theater.",
+    "Applied AI used as part of engineering systems and operating workflows.",
+    "Hands-on depth across product, platform, AI, and cross-functional execution."
+  ],
+  "proofMarks": [
+    "Kayac",
+    "DeNA",
+    "Fabbi",
+    "Fabbi AI",
+    "TV Tokyo / txbiz",
+    "Sony Music Japan",
+    "Mazii"
+  ],
+  "operatingPrinciples": [
+    {
+      "title": "Delivery-first architecture",
+      "body": "I favor technical decisions that survive real constraints: deadlines, team maturity, operations, scale, and cost." 
+    },
+    {
+      "title": "Applied AI under production pressure",
+      "body": "My AI work is grounded in deployable systems, from OCR and facial recognition to coding agents and software engineering workflows." 
+    },
+    {
+      "title": "Technical leadership with implementation depth",
+      "body": "I work comfortably from system design and code-level reasoning up to team structure, process, and product direction." 
+    }
   ],
   "trajectory": [
     {
       "period": "2012-2018",
-      "title": "Japan engineering years",
-      "body": "Worked in Tokyo at Kayac and DeNA on realtime game systems, search optimization, and production engineering under real traffic and product constraints."
+      "title": "Japan product engineering",
+      "body": "Worked at Kayac and DeNA in Tokyo on game systems, realtime networking, AI in games, and search optimization for large production platforms."
     },
     {
       "period": "2013-present",
       "title": "Community product building",
-      "body": "Co-created Mazii as a Japanese learning product and long-running side project for the Vietnam-Japan learner community."
+      "body": "Co-created Mazii as a long-running product for Japanese learners in the Vietnam-Japan ecosystem, combining language tooling and sustained product iteration."
     },
     {
       "period": "2018-2023",
       "title": "Fabbi founding and scale-up",
-      "body": "Co-founded Fabbi, built engineering standards and delivery capability, and helped grow the organization into a large Vietnam-Japan software engineering team."
+      "body": "Co-founded Fabbi, built engineering standards and delivery capability, and helped scale the organization into a major Vietnam-Japan software engineering team."
     },
     {
       "period": "2020-2023",
-      "title": "Applied AI product development",
-      "body": "Led Fabbi AI and the Fvision program across computer vision, eKYC, OCR, smart building, and edge-plus-cloud deployment concerns."
+      "title": "Applied AI products",
+      "body": "Led Fabbi AI and Fvision across computer vision, eKYC, OCR, smart building, embedded constraints, and edge-plus-cloud deployment concerns."
     },
     {
       "period": "2024-present",
-      "title": "Generative AI and agent systems",
-      "body": "Researching open-source LLMs, tokenizer fundamentals, LangChain, LangGraph, LlamaIndex, Google AI SDK, and deep application of coding agents inside software delivery and legacy understanding workflows."
+      "title": "Generative AI and AI-native workflows",
+      "body": "Focused on open-source LLMs, tokenizer fundamentals, LangChain, LangGraph, LlamaIndex, Google AI SDK, coding agents, and legacy-to-document modernization pipelines."
     }
   ],
   "signatureWork": [
@@ -76,11 +100,11 @@
       "period": "2018-2023",
       "role": "CTO & Co-founder",
       "url": "https://fabbi.com.vn",
-      "summary": "Built the engineering foundation of Fabbi from the founding stage, established delivery standards, and led cross-border execution for clients in Vietnam and Japan.",
+      "summary": "Built the engineering foundation of Fabbi from the founding stage, set delivery standards, and led cross-border execution for clients in Vietnam and Japan.",
       "highlights": [
         "Helped scale the engineering organization to 250+ engineers by 2021.",
-        "Led architecture and delivery for multi-million-dollar software projects.",
-        "Built the technical base for Fabbi AI across OCR, eKYC, chatbot, and computer vision workstreams."
+        "Worked on multi-million-dollar software programs for large clients across markets.",
+        "Established the technical base for Fabbi AI across OCR, eKYC, chatbot, and computer vision workstreams."
       ]
     },
     {
@@ -88,22 +112,22 @@
       "period": "Long-running engagement",
       "role": "Architecture and engineering leadership",
       "url": "https://txbiz.tv-tokyo.co.jp/",
-      "summary": "Worked from the early phase of a live streaming platform, video management system, and website-plus-app ecosystem for TV Tokyo. The work included designing microservice architecture and leading the team from the initial build stage under Agile and Scrum delivery.",
+      "summary": "Joined from the early phase of a live streaming platform, video management system, and website-plus-app ecosystem for TV Tokyo, with ownership spanning architecture, team leadership, and Agile delivery rhythm.",
       "highlights": [
         "From-scratch platform build for a major Japanese media brand.",
-        "Ownership across service architecture, team execution, and delivery rhythm.",
-        "Integrated web platform, application ecosystem, and video operations concerns in one product landscape."
+        "Designed microservice architecture for a video-centric product landscape.",
+        "Worked across web platform, app ecosystem, streaming workflow, and operational delivery concerns."
       ]
     },
     {
       "name": "Fvision",
       "period": "2020-2021",
       "role": "Project Director / Applied AI leader",
-      "summary": "Led the Fvision solution for facial recognition and smart building access management, combining deep learning, embedded systems, Android customization, sensors, and deployment engineering.",
+      "summary": "Led the Fvision program for facial recognition and smart building access management, combining deep learning, Android customization, sensors, embedded hardware, and deployment engineering.",
       "highlights": [
         "Recognized with Sao Khue 2021.",
-        "Built as a practical applied AI system, not just a lab demo.",
-        "Connected AI, IoT, hardware, and operations into a deployable product."
+        "Built as a deployable product with AI, IoT, and hardware integration in one system.",
+        "Connected model work to operations, physical environments, and enterprise use cases."
       ]
     },
     {
@@ -111,33 +135,33 @@
       "period": "2013-present",
       "role": "Co-creator",
       "url": "https://mazii.net/",
-      "summary": "Built a Japanese learning and lookup product for learners in the Vietnam-Japan ecosystem, combining product intuition, language tooling, and sustained iteration over time.",
+      "summary": "Built a Japanese learning and lookup product for learners in the Vietnam-Japan ecosystem, reflecting long-term interest in language tooling and useful community products.",
       "highlights": [
         "Started as an independent side project with community utility at the center.",
-        "Became a recognizable product in the Japanese learning space.",
-        "Reflects an enduring interest in useful products, not just client delivery."
+        "Grew into a recognizable product in the Japanese learning space.",
+        "Represents an enduring product mindset beyond client delivery work."
       ]
     }
   ],
   "focusAreas": [
     {
       "name": "AI for software delivery",
-      "description": "Apply Generative AI to reduce friction in coding, review, documentation, and architecture understanding for real engineering teams.",
+      "description": "Applying Generative AI to coding, review, documentation, and architecture understanding for real engineering teams.",
       "stack": "Open-source LLMs, coding agents, workflow orchestration"
     },
     {
       "name": "Legacy reverse engineering",
-      "description": "Convert legacy source systems into useful documentation and structured technical knowledge to accelerate modernization.",
-      "stack": "Source analysis, agent workflows, technical documentation pipelines"
+      "description": "Converting legacy source systems into structured documentation and reusable technical knowledge to accelerate modernization.",
+      "stack": "Source analysis, agent workflows, documentation pipelines"
     },
     {
       "name": "Agentic product development",
-      "description": "Build products and internal systems that use AI agents as part of the operating model, not as isolated experiments.",
+      "description": "Building products and internal systems that use AI agents as part of the operating model rather than as isolated experiments.",
       "stack": "LangChain, LangGraph, LlamaIndex, Google AI SDK"
     },
     {
-      "name": "Applied model understanding",
-      "description": "Study model mechanics and practical constraints deeply enough to make implementation choices that are grounded rather than fashionable.",
+      "name": "Model-level understanding",
+      "description": "Studying model mechanics deeply enough to make grounded implementation decisions instead of trend-driven choices.",
       "stack": "Tokenizer basics, GAN foundations, inference and integration tradeoffs"
     }
   ],
@@ -170,12 +194,22 @@
     {
       "name": "sady",
       "url": "https://github.com/dzungtri/sady",
-      "description": "Terminal-based music player project from earlier experiments."
+      "description": "Terminal-based music search and playback project from earlier experiments."
     },
     {
       "name": "japanese-dict-quiz",
       "url": "https://github.com/dzungtri/japanese-dict-quiz",
       "description": "Language-learning experiment connected to long-term interest in Japanese learning tools."
+    },
+    {
+      "name": "queuevideoplayback",
+      "url": "https://github.com/dzungtri/queuevideoplayback",
+      "description": "Experiment around queued video playback and media interaction."
+    },
+    {
+      "name": "vimrc",
+      "url": "https://github.com/dzungtri/vimrc",
+      "description": "Personal editing setup reflecting long-term command-line and tooling habits."
     }
   ]
 }

@@ -1,16 +1,12 @@
-I am a CTO-profile engineer and technical founder with a delivery-first mindset. My work sits between architecture, execution, and product value: building engineering systems that can ship, scale, and stay useful under operational pressure.
+I am a CTO-profile engineer and technical founder with a delivery-first mindset. The through line in my work is simple: build systems that can ship, scale, and remain useful under operational pressure.
 
-My background started with hands-on engineering in Japan across game technology, realtime systems, and search-oriented platform work. Since then, I have moved through startup building, cross-border delivery, and applied AI product leadership, with a strong bias toward systems that work in production rather than technology theater.
+My background started with hands-on engineering in Japan across game technology, realtime systems, and search-oriented platform work. That path later extended into startup building, cross-border delivery, and applied AI product leadership, with a strong bias toward systems that work in production rather than technology theater.
 
-## What I have built
+The profile today sits at the intersection of architecture, execution, and product value. I work comfortably from system design and code-level reasoning up to engineering process, team capability, and technical direction.
 
-- Engineering organizations with stronger technical standards, development rhythm, and delivery ownership
-- Applied AI products across computer vision, OCR, eKYC, and smart building environments
-- Cross-border product and platform delivery for Vietnam and Japan clients
-- AI-native software workflows around coding agents, system understanding, and engineering leverage
+What I bring into a CTO or technical leadership context:
 
-## Current direction
-
-Since around 2024, I have been focused on Generative AI from both the model and workflow layers. That includes open-source LLM research, tokenizer and model fundamentals, agent frameworks such as `LangChain`, `LangGraph`, `LlamaIndex`, and `Google AI SDK`, and practical use of AI inside software development.
-
-The direction I care about most is not generic AI adoption. It is building systems that help engineering teams move faster with better understanding: coding agents, legacy-to-document reverse engineering, and products where AI agents are part of the operating model.
+- architecture decisions grounded in delivery reality
+- cross-border execution across Vietnam and Japan
+- applied AI experience spanning OCR, eKYC, facial recognition, and smart-building systems
+- current depth in open-source LLMs, coding agents, and legacy-to-document modernization workflows
