@@ -641,8 +641,8 @@ h3 {
   border-left: 2px solid var(--brand);
 }
 
-.prose code,
-.post-prose code {
+.prose :not(pre) > code,
+.post-prose :not(pre) > code {
   padding: 0.08rem 0.32rem;
   background: var(--panel-strong);
   border: 1px solid var(--line);
@@ -657,6 +657,81 @@ h3 {
   padding: 1rem;
   background: var(--brand-deep);
   color: #deebff;
+}
+
+.prose pre code,
+.post-prose pre code,
+.highlight code {
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  font-size: inherit;
+}
+
+.highlighter-rouge,
+.highlight {
+  margin: 1.25rem 0;
+}
+
+.highlight pre {
+  margin: 0;
+  white-space: pre;
+}
+
+.highlight .c,
+.highlight .c1,
+.highlight .cm {
+  color: #7f8cab;
+}
+
+.highlight .k,
+.highlight .kc,
+.highlight .kd,
+.highlight .kn,
+.highlight .kp,
+.highlight .kr,
+.highlight .kt {
+  color: #7cc4ff;
+}
+
+.highlight .s,
+.highlight .s1,
+.highlight .s2,
+.highlight .sa,
+.highlight .sb,
+.highlight .sc,
+.highlight .sd {
+  color: #b9e67a;
+}
+
+.highlight .m,
+.highlight .mi,
+.highlight .mf,
+.highlight .mh {
+  color: #ffcf70;
+}
+
+.highlight .na,
+.highlight .nb,
+.highlight .nc,
+.highlight .nd,
+.highlight .nf,
+.highlight .nn,
+.highlight .nt {
+  color: #9fd3ff;
+}
+
+.highlight .o,
+.highlight .ow,
+.highlight .p {
+  color: #c7d4ea;
+}
+
+.highlight .err {
+  color: #ffd0d0;
+  background: transparent;
 }
 
 .contact-band {
