@@ -1,0 +1,5 @@
+{% if page.post_scripts %}
+  {% for src in page.post_scripts %}
+    <script src="{{ src | relative_url }}" defer></script>
+  {% endfor %}
+{% endif %}

@@ -14,7 +14,7 @@ if (revealNodes.length) {
         }
       }
     },
-    { threshold: 0.12 }
+    { threshold: 0 }
   );
 
   revealNodes.forEach((node) => observer.observe(node));
