@@ -542,6 +542,22 @@ h3 {
   margin-bottom: 1rem;
 }
 
+.writing-home-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 1.6rem;
+  align-items: start;
+}
+
+.writing-home-note {
+  padding-left: 1.4rem;
+  border-left: 1px solid var(--line);
+}
+
+.writing-home-note p:last-child {
+  margin-bottom: 0;
+}
+
 .page-hero h1 {
   margin-bottom: 0.45rem;
   font-size: clamp(2.4rem, 5vw, 4.2rem);
@@ -825,7 +841,8 @@ mjx-container[display="true"] {
   .timeline-row,
   .focus-layout,
   .split-main,
-  .contact-band {
+  .contact-band,
+  .writing-home-layout {
     grid-template-columns: 1fr;
   }
 
@@ -889,5 +906,12 @@ mjx-container[display="true"] {
 
   .proof-band ul {
     gap: 0.45rem 0.8rem;
+  }
+
+  .writing-home-note {
+    padding-left: 0;
+    border-left: 0;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
   }
 }

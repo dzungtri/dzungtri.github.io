@@ -1,0 +1,53 @@
+{% assign profile = site.data.profile %}
+{% assign posts_by_year = site.posts | group_by_exp: 'post', 'post.date | date: "%Y"' %}
+
+<section class="page-hero writing-home-hero" data-reveal>
+  <div class="writing-home-layout">
+    <div>
+      <p class="eyebrow">Writing</p>
+      <h1>Writing</h1>
+      <p class="lead">Archive of notes on AI engineering, CTO execution, software modernization, NLP, tooling, and technical experiments across time.</p>
+      <div class="cta-row">
+        <a class="btn solid" href="{{ '/about/' | relative_url }}">About Me</a>
+        <a class="btn ghost" href="{{ '/projects/' | relative_url }}">Projects</a>
+        <a class="btn ghost" href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      </div>
+    </div>
+    <aside class="writing-home-note">
+      <p class="panel-label">About Me</p>
+      <p>{{ profile.description }}</p>
+      <div class="writing-theme-list">
+        <p class="panel-label">Writing themes</p>
+        <ul class="compact-list">
+          {% for item in profile.writingTracks %}
+            <li>{{ item }}</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="page-section">
+  <label class="search-wrap" for="search-input">
+    <span>Search posts</span>
+    <input id="search-input" type="search" placeholder="Type keyword or tag..." />
+  </label>
+  <div id="search-results" class="search-results"></div>
+  <div id="post-list" class="archive-years">
+    {% for year in posts_by_year %}
+      <section class="archive-year" data-reveal>
+        <h2>{{ year.name }}</h2>
+        <div class="archive-list">
+          {% for post in year.items %}
+            <article class="post-item">
+              <p class="post-meta">{{ post.date | date: "%b %d, %Y" }}{% if post.tags %} · {{ post.tags | join: ", " }}{% endif %}</p>
+              <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+              <p>{{ post.description | default: post.excerpt | strip_html }}</p>
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endfor %}
+  </div>
+</section>
