@@ -30,9 +30,9 @@ omx
 Then once you are inside Codex CLI, try this:
 
 ```text
-/prompts:architect "analyze the auth boundaries and propose the safest change"
+architect "analyze the auth boundaries and propose the safest change"
 $plan "ship OAuth callback safely"
-/prompts:executor "implement the chosen approach with tests"
+executor "implement the chosen approach with tests"
 $ralph "finish remaining gaps and verify the change is complete"
 ```
 
@@ -94,9 +94,9 @@ omx explore --prompt "which files define auth routing"
 Then, inside Codex CLI:
 
 ```text
-/prompts:architect "analyze the auth boundaries and propose the safest change"
+architect "analyze the auth boundaries and propose the safest change"
 $plan "ship OAuth callback safely"
-/prompts:executor "implement the chosen approach with tests"
+executor "implement the chosen approach with tests"
 $ralph "finish remaining gaps and verify the change is complete"
 ```
 
@@ -179,13 +179,15 @@ One of the best things in OmX is that execution is not one undifferentiated chat
 
 You can route work to a role.
 
+In the current setup I am using, those roles show up as bare role commands rather than `/prompts:*` forms.
+
 Examples:
 
 ```text
-/prompts:architect "analyze current auth boundaries"
-/prompts:executor "implement input validation in login"
-/prompts:debugger "find the root cause of the flaky timeout"
-/prompts:verifier "verify the feature is complete and evidence is sufficient"
+architect "analyze current auth boundaries"
+executor "implement input validation in login"
+debugger "find the root cause of the flaky timeout"
+verifier "verify the feature is complete and evidence is sufficient"
 ```
 
 This role separation is valuable because planning, implementation, debugging, and verification are different jobs.
@@ -385,7 +387,7 @@ A lot of confusion goes away if you choose the workflow based on task shape inst
 
 - **understand** → `omx explore`
 - **plan** → `$plan` or `$ralplan`
-- **execute** → role prompt or `$autopilot`
+- **execute** → role command or `$autopilot`
 - **persist** → `$ralph`
 - **parallelize** → `$ultrawork` or `omx team`
 - **recover** → `omx resume`
@@ -401,8 +403,8 @@ This is the minimal command vocabulary most people need.
 | `omx explore` | safe repository discovery | `omx explore --prompt "which files define auth routing"` |
 | `omx sparkshell` | shell-native inspection with summaries | `omx sparkshell git --version` |
 | `omx autoresearch` | topic research | `omx autoresearch "OAuth device flow tradeoffs"` |
-| `/prompts:architect` | design and boundaries | `/prompts:architect "analyze auth boundaries"` |
-| `/prompts:executor` | implementation | `/prompts:executor "add input validation"` |
+| `architect` | design and boundaries | `architect "analyze auth boundaries"` |
+| `executor` | implementation | `executor "add input validation"` |
 | `$plan` | normal planning | `$plan "ship callback safely"` |
 | `$ralplan` | consensus planning for risky work | `$ralplan "plan the migration"` |
 | `$autopilot` | end-to-end autonomous execution | `$autopilot "build the dashboard"` |
@@ -475,8 +477,8 @@ If I were introducing someone to OmX, I would teach it in three levels.
 Learn these first:
 
 - `omx explore`
-- `/prompts:architect`
-- `/prompts:executor`
+- `architect`
+- `executor`
 - `$plan`
 - `omx resume`
 
