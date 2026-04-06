@@ -1,0 +1,60 @@
+.post-figure {
+  margin: 1.8rem 0;
+}
+
+.post-figure img {
+  width: 100%;
+}
+
+.post-figure figcaption {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.65;
+  text-align: center;
+}
+
+.insight-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.insight-card,
+.source-note {
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(237, 243, 255, 0.92) 0%, rgba(255, 255, 255, 0.96) 100%);
+}
+
+.insight-card {
+  padding: 1rem 1.05rem;
+}
+
+.insight-card h3 {
+  margin-top: 0;
+}
+
+.insight-card p:last-child,
+.source-note p:last-child {
+  margin-bottom: 0;
+}
+
+.insight-label {
+  margin-bottom: 0.45rem;
+  color: var(--brand);
+  font-family: "IBM Plex Mono", "SFMono-Regular", monospace;
+  font-size: 0.76rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.source-note {
+  margin-top: 1.8rem;
+  padding: 1rem 1.05rem;
+}
+
+@media (max-width: 720px) {
+  .insight-grid {
+    grid-template-columns: 1fr;
+  }
+}
