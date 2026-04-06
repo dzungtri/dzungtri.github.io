@@ -1,0 +1,25 @@
+.post-figure {
+  margin: 1.8rem 0;
+}
+
+.post-figure img {
+  width: 100%;
+}
+
+.post-figure figcaption {
+  color: var(--muted);
+  font-size: 0.94rem;
+  line-height: 1.65;
+  text-align: center;
+}
+
+.source-note {
+  margin-top: 1.8rem;
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(237, 243, 255, 0.92) 0%, rgba(255, 255, 255, 0.96) 100%);
+}
+
+.source-note p:last-child {
+  margin-bottom: 0;
+}
