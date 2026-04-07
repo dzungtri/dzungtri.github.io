@@ -114,6 +114,7 @@ description: Background, trajectory, and areas of work of Dzung Tri.
   </div>
   <div class="cta-row">
     <a class="btn solid" href="{{ '/' | relative_url }}">Read Writing</a>
+    <a class="btn ghost" href="{{ '/books/' | relative_url }}">Books</a>
     <a class="btn ghost" href="{{ '/projects/' | relative_url }}">Projects</a>
     <a class="btn ghost" href="mailto:{{ site.email }}">Contact</a>
   </div>

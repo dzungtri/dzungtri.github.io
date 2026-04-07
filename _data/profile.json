@@ -187,6 +187,16 @@
   ],
   "projects": [
     {
+      "name": "mini-claw-code",
+      "url": "https://github.com/dzungtri/mini-claw-code",
+      "description": "Hands-on tutorial and reference implementation for building coding agents from scratch, now maintained and extended by dzungtri across Rust, TypeScript, and Python tracks.",
+      "notes": [
+        "This tutorial started as a fork of odysa/mini-claw-code and is now maintained by dzungtri.",
+        "Current maintenance includes TypeScript and Python tracks in English and Vietnamese, plus Vietnamese coverage for the Rust track.",
+        "Planned extensions push the curriculum beyond the simple agent core toward harness agents and an agent OS direction."
+      ]
+    },
+    {
       "name": "dzungtri.github.io",
       "url": "https://github.com/dzungtri/dzungtri.github.io",
       "description": "Canonical repository for profile, blog, search, and GitHub Pages deployment."
@@ -210,6 +220,40 @@
       "name": "vimrc",
       "url": "https://github.com/dzungtri/vimrc",
       "description": "Personal editing setup reflecting long-term command-line and tooling habits."
+    }
+  ],
+  "books": [
+    {
+      "title": "Mini Claw Code",
+      "description": "A multi-track tutorial series on how coding agents work and how to build them from scratch, with Rust, TypeScript, and Python paths.",
+      "landingUrl": "https://dzungtri.github.io/mini-claw-code/",
+      "entries": [
+        {
+          "label": "Rust · English",
+          "url": "https://dzungtri.github.io/mini-claw-code/rust/en/"
+        },
+        {
+          "label": "Rust · Vietnamese",
+          "url": "https://dzungtri.github.io/mini-claw-code/rust/vi/"
+        },
+        {
+          "label": "Rust · Chinese",
+          "url": "https://dzungtri.github.io/mini-claw-code/rust/zh/"
+        },
+        {
+          "label": "TypeScript · English",
+          "url": "https://dzungtri.github.io/mini-claw-code/ts/en/"
+        },
+        {
+          "label": "TypeScript · Vietnamese",
+          "url": "https://dzungtri.github.io/mini-claw-code/ts/vi/"
+        }
+      ],
+      "notes": [
+        "The Rust track is the original foundation.",
+        "The TypeScript and Python tracks are maintained as practical learning paths for engineers working in modern AI product stacks.",
+        "The long-term direction is to extend the material from simple agents into harness agents and agent OS ideas."
+      ]
     }
   ]
 }
